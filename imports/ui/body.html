@@ -1,0 +1,13 @@
+<body>
+  <h1>Пользователи:</h1>
+  <ul>
+  	{{#each users}}
+  		{{>user}}
+  	{{/each}}
+  </ul>
+  
+</body>
+
+<template name="user">
+	<li>{{name}}</li>
+</template>
