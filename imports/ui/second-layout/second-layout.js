@@ -1,6 +1,7 @@
 import {Template} from 'meteor/templating';
-import {Users} from '../imports/api/users.js';
+import {Users} from '../../api/users.js';
 import {ReactiveDict} from 'meteor/reactive-dict';
+import './second-layout.html';
 
 Template.secondLayout.onCreated(function(){
 	this.dict = new ReactiveDict();
