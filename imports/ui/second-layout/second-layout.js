@@ -5,6 +5,7 @@ import './second-layout.html';
 
 Template.secondLayout.onCreated(function(){
 	this.dict = new ReactiveDict();
+	Meteor.subscribe('showUsers');
 });
 
 Template.secondLayout.helpers({
