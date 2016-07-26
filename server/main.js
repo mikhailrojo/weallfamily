@@ -7,7 +7,7 @@ Meteor.startup(() => {
   if (names <= 0){
     _.each(names_dict, (name1)=>{
       console.log(`Insert name: ${name1}`);
-      Names.insert({name: name1});
+      Users.insert({name: name1});
     })
   }
 });
